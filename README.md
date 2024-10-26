@@ -7,73 +7,45 @@ This repository contains the code for a real-time cryptocurrency tracking web ap
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Data](#Data)
-3. [Methodology](#Methodology)
-4. [Results](#Results)
-5. [Future Work](#Future-Work)
-6. [Contributing](#Contributing)
-7. [License](#License)
+2. [Features](#Features)
+3. [Usage](#Usage)
+4. [Future Work](#Future-Work)
+5. [Contributing](#Contributing)
+6. [License](#License)
 
 ## Overview
 <p align="justify">
-Money laundering is a sophisticated financial crime where illicit funds are disguised as legitimate. Traditional rule-based detection methods struggle with evolving and complex laundering schemes. In this project, we use **network analysis** techniques to detect money laundering by identifying central and suspicious nodes (accounts) in transaction networks. Centrality measures like **degree**, **closeness**, and **betweenness centrality** help uncover significant nodes. Additionally, community detection algorithms such as the **Girvan-Newman algorithm** are employed to isolate suspicious clusters of accounts.
+The Crypto Price Tracker is a web application that offers real-time analysis of cryptocurrency prices. It provides a comprehensive view of price movement with interactive candlestick charts, various technical indicators (RSI, MACD, Bollinger Bands, Support and Resistance Levels), and a heatmap to visualize price changes across selected cryptocurrency pairs.
 </p>
 
+
+## Features:
 <p align="justify">
-Marketing campaigns are integral to driving customer engagement and conversions. In this project, we analyze A/B testing data to determine if different campaign strategies; Ad vs. PSA, significantly impact conversion rates. Using statistical tests, we assess if campaign type and ad frequency correlate with higher conversions and measure the practical impact of these factors on conversion likelihood. 
+
+* **Candlestick Chart**: Displays price movements with candlestick patterns, along with Moving Averages (MA) and Exponential Moving Averages (EMA).
+* **Technical Indicators**: Includes Relative Strength Index (RSI), MACD, Bollinger Bands, and Support/Resistance levels.
+* **Crypto Price Heatmap:**: Shows the latest percentage price changes across multiple cryptocurrencies in a heatmap format.
+* **Dynamic Control Options**: Allows users to select coin pairs, timeframes, data span, and technical indicators for personalized analysis.
+* **Real-Time Updates**: Data refreshes every 10 seconds to keep charts up-to-date with current market trends.
 </p>
 
-## Data:
+## Usage:
 <p align="justify">
-The dataset used for this project includes anonymized user data on ad exposure and conversion outcomes, with the following key attributes:
-</p>
+* **Select Coin Pair**: Choose a cryptocurrency pair (e.g., BTC/USD, ETH/USD) for analysis.
+* **Set Timeframe**: Define the candlestick interval (e.g., 1 Minute, 3 Minutes, 1 Hour, 1 Day).
+* **Adjust Span**: Choose the number of bars to display in the chart.
+* **Choose Indicator**: Select a technical indicator like RSI, MACD, Bollinger Bands, or Support and Resistance levels.
+* **Observe Heatmap**: The heatmap at the bottom shows the latest price movement trends across other cryptocurrencies.
 
-* **test group**: Indicates the campaign type (`ad` or `psa`)
-* **converted**: Binary variable indicating conversion (True/False)
-* **total ads**: Number of ads shown to each user
-* **most ads day**: Day of the week with the highest ad exposure
-* **most ads hour**: Hour of the day with the highest ad exposure
-
-<p align="justify">
-For the purposes of this project, a subset of 2000 transactions was sampled and used for analysis due to computational constraints. Columns related to transaction type, timestamp, and fraud labels were excluded, focusing on **network properties**.
-</p>
-
-## Methodology:
-### 1. Preprocessing
-<p align="justify">
-The dataset was cleaned by removing irrelevant columns and focusing on metrics essential for A/B testing, such as `test group`, `converted`, `total ads`, `most ads day`, and `most ads hour`.
-</p>
-
-### 2. Statistical Testing
-<p align="justify">
-The following statistical tests were conducted: 
-
-* **Chi-Square Test**: To compare conversion rates between `ad` and `psa` groups.
-* **Point-Biserial Correlation**: To measure the association between `total ads` and conversion.
-* **Linear Regression**: To estimate the effect of `total ads` on conversion probability.
-* **Effect Size Calculation (Cohen’s d)**: To determine the practical significance of ad exposure differences between groups.
-</p>
-
-### 3. Visualization
-<p align="justify">
-Visualizations included: 
-
-* **Conversion Rate by Day and Hour**: Stacked bar plots for weekly and hourly conversion trends.
-* **Conversion vs. Total Ads**: Scatter and box plots to visualize ad exposure differences by conversion status.
-</p>
-
-## Results:
-<p align="justify">
-* **Conversion Differences**: The Chi-Square test indicated significant conversion differences between the `ad` and `psa` groups. 
-* **Ad Frequency Impact**: A positive correlation between `total ads` and conversion probability was found, with regression results showing a small but significant increase in conversion with ad frequency.
-* **Effect Size**: Cohen’s d showed an extremely small practical effect, indicating that while statistically significant, the difference in ad exposure is practically minimal. 
+The app will automatically refresh data every 10 seconds, providing updated charts and analysis.
 </p>
 
 ## Future Work:
 <p align="justify">
-* **Incorporate Additional Features**: Adding data on user demographics and behavior could refine insights.
-* **Longitudinal Analysis**: Analyzing conversion trends over time may reveal seasonality or time-sensitive patterns.
-* **Machine Learning Integration**: Building predictive models using these results could enhance campaign targeting and optimization. 
+* Adding more technical indicators like VWAP and Stochastic Oscillator.
+* Historical data analysis to observe past trends and predict future movements.
+* User authentication to save preferences and create personalized dashboards.
+* Integration with more APIs to access broader market data beyond Bitstamp.
 </p>
 
 ## Contributing
@@ -87,4 +59,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-For more details, please refer to the [project report](https://github.com/VirendraChavda/Marketing-Effectivenes/blob/main/A_B%20Testing.ipynb).
+For more details, please refer to the source code in this repository.
