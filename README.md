@@ -30,7 +30,7 @@ The Crypto Price Tracker is a web application that offers real-time analysis of 
 </p>
 
 ## Usage:
-<p align="justify">
+
 * **Select Coin Pair**: Choose a cryptocurrency pair (e.g., BTC/USD, ETH/USD) for analysis.
 * **Set Timeframe**: Define the candlestick interval (e.g., 1 Minute, 3 Minutes, 1 Hour, 1 Day).
 * **Adjust Span**: Choose the number of bars to display in the chart.
@@ -38,7 +38,7 @@ The Crypto Price Tracker is a web application that offers real-time analysis of 
 * **Observe Heatmap**: The heatmap at the bottom shows the latest price movement trends across other cryptocurrencies.
 
 The app will automatically refresh data every 10 seconds, providing updated charts and analysis.
-</p>
+
 
 ## Future Work:
 <p align="justify">
