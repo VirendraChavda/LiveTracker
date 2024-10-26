@@ -41,12 +41,11 @@ The app will automatically refresh data every 10 seconds, providing updated char
 
 
 ## Future Work:
-<p align="justify">
+
 * Adding more technical indicators like VWAP and Stochastic Oscillator.
 * Historical data analysis to observe past trends and predict future movements.
 * User authentication to save preferences and create personalized dashboards.
 * Integration with more APIs to access broader market data beyond Bitstamp.
-</p>
 
 ## Contributing
 <p align="justify">
