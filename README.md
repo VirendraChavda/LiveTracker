@@ -2,7 +2,7 @@
 ### Author: Virendrasinh Chavda
 
 <p align="justify">
-This repository contains the code for a real-time cryptocurrency tracking web app developed using Dash and Plotly. The app displays live candlestick charts, technical indicators like RSI and MACD, and a heatmap for visualizing price changes across various cryptocurrency pairs. Users can select the desired cryptocurrency, time frame, data span, and technical indicator to analyze market trends and make informed trading decisions. The app deployed on GCP can be viewed [here](https://crypto-tracker-live.nw.r.appspot.com/).
+This repository contains the code for a real-time cryptocurrency tracking web app developed using Dash and Plotly. The app displays live candlestick charts, technical indicators like RSI and MACD, and a heatmap for visualizing price changes across various cryptocurrency pairs. Users can select the desired cryptocurrency, time frame, data span, and technical indicator to analyze market trends and make informed trading decisions. The app deployed on GCP can be viewed here (https://crypto-tracker-live.nw.r.appspot.com/).
 </p>
 
 ## Table of Contents
